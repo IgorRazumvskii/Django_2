@@ -1,8 +1,0 @@
-u2 = User.objects.create_user("user2")
-a1 = Author.objects.create(user=u1)
-a2 =Author.objects.create(user=u2)
-c1 = Category.objects.create(name_of_category="culture")
-c2 = Category.objects.create(name_of_category="sport")
-c3 = Category.objects.create(name_of_category="policy")
-c4 = Category.objects.create(name_of_category="economy")
-article1 = Post.objects.create(article_or_news = "AR", header="header_of_article1",  text="text_of_article1", category.set(c1), author = a1)
